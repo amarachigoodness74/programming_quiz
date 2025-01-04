@@ -128,14 +128,16 @@ export default function Quiz() {
           <ul>
             {quiz.options.map((option: string, i: number) => (
               <li className={styles.option} key={i}>
-                <input
-                  type="radio"
-                  name={quiz._id.toString()}
-                  onChange={(e) => addAnswer(e)}
-                  value={option}
-                  checked={answered[quiz._id] === option}
-                />
-                {option}
+                <label>
+                  <input
+                    type="radio"
+                    name={quiz._id.toString()}
+                    onChange={(e) => addAnswer(e)}
+                    value={option}
+                    checked={answered[quiz._id] === option}
+                  />
+                  {option}
+                </label>
               </li>
             ))}
           </ul>
