@@ -11,7 +11,8 @@ I built this app to try out building a `GraphQL API` with Next.js API. The Graph
 - First, could you fork this repo?
 - Then clone your forked version.
 - Create a mongodb database called `quiz` and add all the questions (check the `db/schemas/` folder for guidance)
-  ````{
+  ````
+  {
     "question": "Test question",
     "options": ["Option 1", "Option 1", "Correct Answer", "Option 3"],
     "answer": "Correct Answer"
